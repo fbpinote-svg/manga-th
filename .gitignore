@@ -1,0 +1,51 @@
+# Installed dependencies and virtual environments
+node_modules/
+.pnpm-store/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Generated output and caches
+.next/
+out/
+build/
+dist/
+coverage/
+.debug/
+.cache/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+*.tmp
+*.part
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Model weights are downloaded with worker/download_models.py
+/worker/models/
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Local sample images and assistant settings
+/รูปเทส/
+.claude/
+.codex/
+AGENTS.md
+CLAUDE.md
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

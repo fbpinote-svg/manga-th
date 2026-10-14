@@ -1,0 +1,8 @@
+onnxruntime-gpu[cuda,cudnn]==1.29.0
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+python-multipart>=0.0.20
+pydantic>=2
+opencv-python-headless==5.0.0.93
+numpy>=2
+nvidia-ml-py==13.610.43

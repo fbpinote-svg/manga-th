@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--f-sarabun), system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* transparent-PNG preview background */
+.checker {
+  background-color: #777;
+  background-image: linear-gradient(45deg, #999 25%, transparent 25%), linear-gradient(-45deg, #999 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #999 75%), linear-gradient(-45deg, transparent 75%, #999 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+
+.btn {
+  @apply rounded-md bg-neutral-800 px-3 py-1.5 text-sm hover:bg-neutral-700 disabled:cursor-not-allowed disabled:opacity-40;
+}
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-500;
+}
+.field {
+  @apply w-full rounded-md border border-neutral-700 bg-neutral-900 px-2 py-1 text-sm;
+}
